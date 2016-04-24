@@ -94,6 +94,29 @@ $page = "index";
                         </div>
                         <div class="module module-info desktop-7">
                             <div class="info">
+                                <h3>Code Explorer</h3>
+
+                                <!-- Ctrl + T popup -->
+
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                                <p class="link"><a href="#">Learn more about Code Explorer &rsaquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row1">
+                <div class="grid-container">
+                    <div class="oldgrid">
+                        <div class="module module-image desktop-5">
+                            <div class="info">
+                                <img src="/img/placeholder.png" alt="Placeholder" />
+                            </div>
+                        </div>
+                        <div class="module module-info desktop-7">
+                            <div class="info">
                                 <h3>Refactoring</h3>
 
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
