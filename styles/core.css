@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("oldgrid.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px none;
+    box-sizing: border-box;
+}
+
+body {
+    font: 300 14px/1.4 'Montserrat';
+}
+
+strong {
+    font: 700 14px/1.4 'Montserrat';
+}
+
+.grid-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.module {
+    /*border: 1px solid #ddd;*/
+}
+
+.module-image {
+    overflow: hidden;
+}
+
+.module-info {
+}
+
+.module-info h3 {
+    font-size: 1.7em;
+    color: #666;
+    font-weight: 300;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.module-info p {
+    font-size: 1.05em;
+    line-height: 1.6em;
+    color: #666;
+}
+
+.module-info p.link {
+    padding-top: 1em;
+}
+
+.row {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.row1 {
+    background: #eee;
+}
+
+.row2 {
+    background: #f7f7f7;
+}
+
+.row .rowhead {
+    text-align: center;
+    padding-bottom: 3em;
+    margin-top: -3em;
+}
+
+.row .rowhead h2 {
+    font-size: 2.2em;
+    font-weight: 300;
+}
+
+.row .rowhead h3 {
+    font-weight: 300;
+    color: #666;
+}
