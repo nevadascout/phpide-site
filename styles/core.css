@@ -57,11 +57,11 @@ strong {
     padding-bottom: 3em;
 }
 
-.row1 {
+.row:nth-child(even) {
     background: #eee;
 }
 
-.row2 {
+.row:nth-child(odd) {
     background: #f7f7f7;
 }
 
