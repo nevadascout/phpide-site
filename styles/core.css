@@ -80,3 +80,8 @@ strong {
     font-weight: 300;
     color: #666;
 }
+
+.footnote {
+    color: #999;
+    font-size: 0.8em;
+}
