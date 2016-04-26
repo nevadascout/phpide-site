@@ -1,4 +1,8 @@
 RewriteEngine On
+
+## TODO -- Don't redirect /blog to /blog.php
+
+
 RewriteCond %{REQUEST_FILENAME} !-f
 
 # Rewrite - as / (eg /feature/git forwards to /feature-git.php)
