@@ -1,18 +1,18 @@
 <?php
 require "/inc/core.php";
 
-$page = "index";
+$page = "features";
 
 ?><!DOCTYPE html>
     <head lang="en">
         <meta charset="utf-8" />
-        <title><?= Core::NAME ?> | <?= Core::TAGLINE ?></title>
+        <title>Features | <?= Core::NAME ?></title>
         <link rel="stylesheet" type="text/css" href="/styles/core.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="features">
                 <?php include "/inc/menu.php" ?>
             </nav>
 
@@ -22,7 +22,7 @@ $page = "index";
             </div>
         </header>
 
-        <div class="features-content">
+        <div class="content-features">
 
             <!-- <div class="row">
                 <div class="grid-container">
@@ -255,6 +255,55 @@ $page = "index";
                 </div>
             </div>
 
+
+
+            <div class="row">
+                <div class="grid-container">
+                    <div class="oldgrid">
+                        <div class="rowhead">
+                            <h2>PHP Unit Testing</h2>
+                            <h3>Subheading goes here</h3>
+                        </div>
+
+                        <div class="module module-image desktop-5">
+                            <div class="info">
+                                <img src="/img/placeholder.png" alt="Placeholder" />
+                            </div>
+                        </div>
+                        <div class="module module-info desktop-7">
+                            <div class="info">
+                                <h3>PHPUnit Continuous Test Runner</h3>
+
+                                <p>You don't realise how useful it is to know immediately when one of your code changes has broken a unit test until you have a continuous test runner. Ours runs in the background monitoring your code and running impacted tests automatically. Combined with code coverage (see below) this is a very powerful and useful feature.</p>
+
+                                <p class="link"><a href="#">Learn more about Testing &rsaquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="grid-container">
+                    <div class="oldgrid">
+                        <div class="module module-info desktop-7">
+                            <div class="info">
+                                <h3>Code Coverage</h3>
+
+                                <p>Combined with our continuous test runner, we're able to show full code coverage for every PHP file in a project - in real time. We highlight lines that are covered by failing, risky, incomplete or skipped tests, or even lines that don't have any code coverage. You will know immediately show you if your code change has broken any unit tests.</p>
+
+                                <p class="link"><a href="#">Learn more about Testing &rsaquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="module module-image desktop-5">
+                            <div class="info">
+                                <img src="/img/placeholder.png" alt="Placeholder" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <?php include "/inc/request-access-row.php" ?>
 
             <div class="row">
@@ -370,44 +419,20 @@ $page = "index";
             <div class="row">
                 <div class="grid-container">
                     <div class="oldgrid">
+
                         <div class="rowhead">
-                            <h2>PHP Unit Testing</h2>
-                            <h3>Subheading goes here</h3>
+                            <h2>Cross-Platform</h2>
+                            <h3>Works on Windows, Mac OS X and Linux</h3>
                         </div>
 
-                        <div class="module module-image desktop-5">
+                        <div class="module module-image desktop-12">
                             <div class="info">
-                                <img src="/img/placeholder.png" alt="Placeholder" />
+                                <img src="/img/cross-platform.png" alt="The Windows, Mac OS X and Linux Logos" />
                             </div>
                         </div>
-                        <div class="module module-info desktop-7">
-                            <div class="info">
-                                <h3>PHPUnit Continuous Test Runner</h3>
-
-                                <p>You don't realise how useful it is to know immediately when one of your code changes has broken a unit test until you have a continuous test runner. Ours runs in the background monitoring your code and running impacted tests automatically. Combined with code coverage (see below) this is a very powerful and useful feature.</p>
-
-                                <p class="link"><a href="#">Learn more about Testing &rsaquo;</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="grid-container">
-                    <div class="oldgrid">
-                        <div class="module module-info desktop-7">
-                            <div class="info">
-                                <h3>Code Coverage</h3>
-
-                                <p>Combined with our continuous test runner, we're able to show full code coverage for every PHP file in a project - in real time. We highlight lines that are covered by failing, risky, incomplete or skipped tests, or even lines that don't have any code coverage. You will know immediately show you if your code change has broken any unit tests.</p>
-
-                                <p class="link"><a href="#">Learn more about Testing &rsaquo;</a></p>
-                            </div>
-                        </div>
-                        <div class="module module-image desktop-5">
-                            <div class="info">
-                                <img src="/img/placeholder.png" alt="Placeholder" />
+                        <div class="module module-info desktop-12">
+                            <div class="info" style="text-align: center">
+                                <p><?= Core::APPNAME ?> is fully cross-platform and runs on Windows, Mac OS X, Ubuntu, Debian, Fedora &amp; CentOS.</p>
                             </div>
                         </div>
                     </div>

@@ -5,8 +5,9 @@ RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
 
-# Rewrite - as / (eg /feature/git forwards to /feature-git.php)
+# Rewrite - as / (eg /feature-git.php becomes /feature/git)
 RewriteRule ([^/]+)/([^/]+) $1-$2.php [NC,L]
 
-# Remove file extension (eg /features/ forwards to /features.php)
+# Remove file extension (eg /features.php becomes /features)
 RewriteRule ^([^\.]+)/$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

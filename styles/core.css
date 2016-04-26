@@ -35,7 +35,12 @@ strong {
 .module-image img {
     border:1px solid #ddd;
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.1);
-    width: 380px;
+    /*width: 380px;*/
+}
+
+.module-priceinfo {
+    text-align: center;
+    padding-bottom: 2em;
 }
 
 .module-info {
@@ -68,15 +73,45 @@ strong {
     text-decoration: underline;
 }
 
-/*.module-info a:visited {
+.module-info a:visited {
     color: blue;
-}*/
+}
+
+.module-pricebox {
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 0 10px 10px 10px;
+    border-radius: 2px;
+}
+
+.module-pricebox h4 {
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.module-pricebox h4 span {
+    color: #666;
+    font-size: 0.5em;
+}
+
+.module-pricebox h5 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.3em;
+    color: #666;
+}
 
 .row {
     width: 100%;
     border-bottom: 1px solid #ddd;
     padding-top: 4em;
     padding-bottom: 3em;
+}
+
+.row.short {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .row:nth-child(even) {
@@ -101,6 +136,50 @@ strong {
 .row .rowhead h3 {
     font-weight: 300;
     color: #666;
+}
+
+.row .rowhead p {
+    padding-top: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.opensource-info {
+    max-width: 600px;
+    margin: 200px auto 0 auto;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    border-radius: 2px;
+}
+
+.narrow-content {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+    padding: 0 10px;
+}
+
+.narrow-content h3, .narrow-content p {
+    padding-bottom: 0.7em;
+}
+
+.narrow-content p {
+    line-height: 1.5em;
+}
+
+.narrow-content .grey {
+    color: #999;
+}
+
+.narrow-content a {
+    text-decoration: none;
+    color: #5a5aff;
+}
+
+.narrow-content a:hover {
+    text-decoration: underline;
 }
 
 .footnote {
@@ -146,7 +225,14 @@ nav {
     background: #000016;
     height: 60px;
     /*border-bottom: 1px solid #202020;*/
+}
+
+nav.features {
     margin-top: -300px;
+}
+
+nav.pricing {
+    margin-top: -60px;
 }
 
 nav ul {
@@ -182,7 +268,13 @@ nav ul li a.active {
 }
 
 .request-beta-btn {
-    float:right;
+    float: right;
+}
+
+@media only handheld {
+    .request-beta-btn {
+        display: none;
+    }
 }
 
 .btn {
@@ -193,15 +285,19 @@ nav ul li a.active {
     border: 1px solid #000;
     transition: background 200ms;
     margin-right: 0;
+    display: inline;
 }
 
 .btn:hover {
     background: #565646;
 }
 
-
-.features-content {
+.content-features {
     margin-top: 300px;
+}
+
+.content-pricing {
+    margin-top: 60px;
 }
 
 .request-access-row {
