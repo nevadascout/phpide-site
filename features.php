@@ -6,7 +6,7 @@ $page = "features";
 ?><!DOCTYPE html>
     <head lang="en">
         <meta charset="utf-8" />
-        <title>Features | <?= Core::NAME ?></title>
+        <title>Features | <?= Core::APPNAME ?></title>
         <link rel="stylesheet" type="text/css" href="/styles/core.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -16,7 +16,7 @@ $page = "features";
                 <?php include "/inc/menu.php" ?>
             </nav>
 
-            <div class="headertext">
+            <div class="headertext headertext-features">
                 <h1>Improve your web development experience</h1>
                 <h2><strong>Be more productive.</strong> Write better code, faster.</h2>
             </div>
@@ -29,7 +29,7 @@ $page = "features";
                     <div class="oldgrid">
                         <div class="module module-info desktop-12">
                             <h2>What is all this?</h2>
-                            <p><?= Core::NAME ?> is a powerful editor designed specifically for PHP development.</p>
+                            <p><?= Core::APPNAME ?> is a powerful editor designed specifically for PHP development.</p>
                         </div>
                     </div>
                 </div>

@@ -196,9 +196,65 @@ header .headertext {
     background: #000016;
     position: fixed;
     width: 100%;
-    margin-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
+    border-top: 1px solid #2f2f42;
+}
+
+header .headertext h2 {
+    font-weight: 300;
+}
+
+header .headertext-features {
     margin-top: -240px;
+}
+
+header .headertext-landing {
+    margin-top: -440px;
+    height: 500px;
+    position: absolute;
+}
+
+header .headertext-landing h1 {
+    margin-top: 60px;
+}
+header .headertext-landing h2 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+header .headertext-landing a {
+    text-decoration: none;
+}
+
+header .headertext-landing .feature-tour-link {
+    margin-top: 40px;
+}
+
+header .headertext-landing .feature-tour-link a {
+    color: #eee;
+    transition: color 200ms;
+}
+
+header .headertext-landing .feature-tour-link a:hover {
+    color: #fff;
+}
+
+header .headertext-landing .landing-buttons {
+    margin-top: 60px;
+    color: #666;
+}
+
+header .headertext-landing .landing-buttons .btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header .headertext-landing .notes {
+    color: #666;
+    font-size: 0.8em;
+    margin-top: 36px;
 }
 
 header h1 {
@@ -225,6 +281,10 @@ nav {
     background: #000016;
     height: 60px;
     /*border-bottom: 1px solid #202020;*/
+}
+
+nav.landing {
+    margin-top: -500px;
 }
 
 nav.features {
@@ -267,6 +327,13 @@ nav ul li a.active {
     border-bottom: 2px solid #555;
 }
 
+nav .logo {
+    text-transform: uppercase;
+    color: #fff;
+    border-right: 1px solid #3f3f3f;
+    padding-right: 20px;
+}
+
 .request-beta-btn {
     float: right;
 }
@@ -290,6 +357,18 @@ nav ul li a.active {
 
 .btn:hover {
     background: #565646;
+}
+
+.btn-secondary {
+    background: #2f2f42;
+}
+
+.btn-secondary:hover {
+    background: #434354;
+}
+
+.content-landing {
+    margin-top: 500px;
 }
 
 .content-features {

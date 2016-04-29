@@ -6,7 +6,7 @@ $page = "pricing";
 ?><!DOCTYPE html>
     <head lang="en">
         <meta charset="utf-8" />
-        <title>Pricing | <?= Core::NAME ?></title>
+        <title>Pricing | <?= Core::APPNAME ?></title>
         <link rel="stylesheet" type="text/css" href="/styles/core.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>

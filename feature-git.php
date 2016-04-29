@@ -7,7 +7,7 @@ $page = "index";
 ?><!DOCTYPE html>
     <head lang="en">
         <meta charset="utf-8" />
-        <title><?= Core::NAME ?> | <?= Core::TAGLINE ?></title>
+        <title><?= Core::APPNAME ?> | <?= Core::TAGLINE ?></title>
         <link rel="stylesheet" type="text/css" href="/styles/core.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
