@@ -26,8 +26,9 @@ class Core
         - Finish landing page
         - Add more links to footer
 
-        - Rework features page to have more general features only (+ add link to extensions)
-        - Add php section to extensions + move php features there
+        / Rework features page to have more general features only (+ add link to extensions)
+        - Reword copy on features page to better match
+        / Add php section to extensions + move php features there
         - Add ruby section to extensions
 
         - Extensions (extra languages/frameworks) section (official, community)

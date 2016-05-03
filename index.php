@@ -17,8 +17,10 @@ $page = "index";
             </nav>
 
             <div class="headertext headertext-landing">
-                <h1>A Modern Editor for the Modern Web</h1>
-                <h2><?= Core::APPNAME ?> gives you everything you need to build beautiful, dynamic websites or apps using the latest languages and frameworks.</h2>
+                <h1>An Editor for the Modern Web</h1>
+                <h2><?= Core::APPNAME ?> is a powerful, feature-rich development environment designed by web developers, for web developers.</h2>
+
+                <!-- <h2><?= Core::APPNAME ?> gives you everything you need to build beautiful, dynamic websites or apps using the latest languages and frameworks.</h2> -->
 
                 <p class="feature-tour-link"><a href="/features">Take a Feature Tour &rsaquo;</a></p>
 
@@ -39,11 +41,16 @@ $page = "index";
                             <h3>Write better code, faster</h3>
                         </div>
 
-                        <!-- Screenshots here -->
+                        <!-- TODO -- Screenshots here -->
 
-                        <!-- Testimonials -->
+                        <div class="rowhead">
+                            <h2>Extendable Language Support</h2>
+                            <h3>Our Extensions add full support for the latest frameworks and languages<br />including PHP, Ruby and Javascript</h3>
+                        </div>
 
-                        <!-- Clients (companies using it) -->
+                        <!-- TODO -- Testimonials -->
+
+                        <!-- TODO -- Clients (companies using it) -->
 
                     </div>
                 </div>

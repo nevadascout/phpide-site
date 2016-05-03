@@ -102,6 +102,54 @@ strong {
     color: #666;
 }
 
+a .module-extension {
+    color: #666;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 200ms, border 200ms;
+}
+
+a:hover .module-extension {
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.module-extension {
+    background: #fff;
+    border: 1px solid #ddd;
+    /*padding: 0 10px 10px 10px;*/
+    border-radius: 2px;
+    width: 302px;
+}
+
+
+.module-extension .extension-module-logo {
+    border-bottom: 1px solid #ddd;
+}
+
+.module-extension h3, .module-extension h4, .module-extension p {
+    padding: 0 10px 10px 10px;
+}
+
+.module-extension h3 {
+    padding-top: 5px;
+    color: #202020;
+}
+
+.module-extension h4 {
+    font-weight: 300;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.module-extension h4 span {
+    font-weight: 700;
+    color: #666;
+}
+
+.grid-row {
+    clear: both;
+}
+
 .row {
     width: 100%;
     border-bottom: 1px solid #ddd;
@@ -142,6 +190,12 @@ strong {
     padding-top: 2em;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.row .rowhead-left {
+    text-align: left;
+    padding-bottom: 3em;
+    margin-top: -3em;
 }
 
 .opensource-info {

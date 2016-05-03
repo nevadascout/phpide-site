@@ -1,47 +1,36 @@
 <?php
 require "/inc/core.php";
 
-$page = "features";
+$page = "extensions";
 
 ?><!DOCTYPE html>
     <head lang="en">
         <meta charset="utf-8" />
-        <title>Features | <?= Core::APPNAME ?></title>
+        <title>Extensions | <?= Core::APPNAME ?></title>
         <link rel="stylesheet" type="text/css" href="/styles/core.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
         <header>
-            <nav class="features">
+            <nav class="pricing">
                 <?php include "/inc/menu.php" ?>
             </nav>
 
             <div class="headertext headertext-features">
-                <h1>Improve your web development experience</h1>
+                <h1>Extension: PHP</h1>
                 <h2><strong>Be more productive.</strong> Write better code, faster.</h2>
             </div>
         </header>
 
-        <div class="content-features">
-
-            <!-- <div class="row">
-                <div class="grid-container">
-                    <div class="oldgrid">
-                        <div class="module module-info desktop-12">
-                            <h2>What is all this?</h2>
-                            <p><?= Core::APPNAME ?> is a powerful editor designed specifically for PHP development.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+        <div class="content-pricing">
 
             <div class="row">
                 <div class="grid-container">
                     <div class="oldgrid">
 
                         <div class="rowhead">
-                            <h2>HTML/CSS Editor</h2>
-                            <h3>The Web development environment you've always dreamed of...</h3>
+                            <h2>PHP Extension</h2>
+                            <h3>The PHP development environment you've always dreamed of...</h3>
                         </div>
 
                         <div class="module module-info desktop-7">
@@ -88,11 +77,11 @@ $page = "features";
                     <div class="oldgrid">
                         <div class="module module-info desktop-7">
                             <div class="info">
-                                <h3>Markup Analysis</h3>
+                                <h3>Code Analysis</h3>
 
-                                <p>Reduce the number of runtime errors and cut down on unused or complicated code with our real time Markup Analysis. Running in the background as you work, we can immediately point out potential mistakes or improvements you could make. You can even configure the version of PHP that should be used for analysis, all the way back to v5.3.</p>
+                                <p>Reduce the number of runtime errors and cut down on unused or complicated code with our real time Code Analysis. Running in the background as you work, we can immediately point out potential mistakes or improvements you could make. You can even configure the version of PHP that should be used for analysis, all the way back to v5.3.</p>
 
-                                <p class="link"><a href="#">Learn more about Markup Analysis &rsaquo;</a></p>
+                                <p class="link"><a href="#">Learn more about Code Analysis &rsaquo;</a></p>
                             </div>
                         </div>
                         <div class="module module-image desktop-5">
@@ -158,75 +147,29 @@ $page = "features";
                         </div>
                         <div class="module module-info desktop-7">
                             <div class="info">
-                                <h3>SASS/LESS Support</h3>
+                                <h3>PSR Enforcement</h3>
 
-                                <p><?= Core::APPNAME ?> comes with built-in SASS and LESS transpilers that run on-type and let you easily create usable CSS files that are updated automatically. We also provide code-completion for your existing variables, and let you generate new ones with a few keystrokes.</p>
+                                <p>Code quality is improved when a development team uses a shared set of code styling rules. We have a fully customisable <i>PHP Standards Recommendations</i> (PSR) enforcement engine that runs in real time and flags style violations to developers as they're writing code.</p>
+
+                                <p class="link"><a href="#">Learn more about PSR Enforcement &rsaquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="grid-container">
+                    <div class="oldgrid">
+                        <div class="module module-info desktop-7">
+                            <div class="info">
+                                <h3>PHP Template Frameworks</h3>
+
+                                <p>Using a PHP template framework? No problem! We offer full support for Twig and Smarty, with users easily able to extend <?= Core::APPNAME ?> to support other frameworks. Template support includes syntax highlighting, code completion for variables (both in HTML and PHP files), code analysis to check for unused or undefined variables and more.</p>
 
                                 <p class="link"><a href="#">Learn more about HTML/CSS Integration &rsaquo;</a></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="grid-container">
-                    <div class="oldgrid">
-                        <div class="module module-info desktop-7">
-                            <div class="info">
-                                <h3>Syntax Highlighting</h3>
-
-                                <p>We wouldn't be a modern development environment without having full syntax highlighting for your code. Out of the box, we support the latest versions of PHP, HTML, CSS, SASS, LESS, Javascript (including AngularJS), JSON and SQL. Users can add custom syntax themes using industry standard .tmtheme files.</p>
-
-                                <p class="link"><a href="#">Learn more about Editing &rsaquo;</a></p>
-                            </div>
-                        </div>
-                        <div class="module module-image desktop-5">
-                            <div class="info">
-                                <img src="/img/placeholder.png" alt="Placeholder" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <?php include "/inc/request-access-row.php" ?>
-
-            <div class="row">
-                <div class="grid-container">
-                    <div class="oldgrid">
-                        <div class="module module-image desktop-5">
-                            <div class="info">
-                                <img src="/img/placeholder.png" alt="Placeholder" />
-                            </div>
-                        </div>
-                        <div class="module module-info desktop-7">
-                            <div class="info">
-                                <h3>Projects</h3>
-
-                                <p>In it's most basic form, a project is simply a folder that contains source code. Having projects allow you to configure project-wide settings per user, or for a whole team. You can set things like the target version of PHP and more.</p>
-
-                                <p class="link"><a href="#">Learn more about Projects &rsaquo;</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="grid-container">
-                    <div class="oldgrid">
-                        <div class="module module-info desktop-7">
-                            <div class="info">
-                                <h3>Git Support</h3>
-
-                                <p>Say goodbye to the command line* as we have full support for Git out of the box. Create branches, push/pull/fetch, commit changes and even do merges in a specifically designed UI. We detect existing git repositories and track changes automatically.</p>
-
-                                <p><i class="footnote">* or don't, we're happy either way!</i></p>
-
-                                <p class="link"><a href="#">Learn more about Git Support &rsaquo;</a></p>
-                            </div>
-                        </div>
                         <div class="module module-image desktop-5">
                             <div class="info">
                                 <img src="/img/placeholder.png" alt="Placeholder" />
@@ -239,83 +182,44 @@ $page = "features";
             <div class="row">
                 <div class="grid-container">
                     <div class="oldgrid">
-                        <div class="module module-image desktop-5">
-                            <div class="info">
-                                <img src="/img/placeholder.png" alt="Placeholder" />
-                            </div>
-                        </div>
-                        <div class="module module-info desktop-7">
-                            <div class="info">
-                                <h3>Distraction-Free Mode</h3>
-
-                                <p>Prefer your editor with a more lightweight interface, or just need to focus? Enable our distraction-free mode to hide almost all of the UI. You can even configure what should be hidden when this mode is enabled, from scroll bars to line numbers to whitespace.</p>
-
-                                <p class="link"><a href="#">Learn more about Distraction-Free Mode &rsaquo;</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="grid-container">
-                    <div class="oldgrid">
-                        <div class="module module-info desktop-7">
-                            <div class="info">
-                                <h3>File Change Diffs</h3>
-
-                                <p>Prefer your editor with a more lightweight interface, or just need to focus? Enable our distraction-free mode to hide almost all of the UI. You can even configure what should be hidden when this mode is enabled, from scroll bars to line numbers to whitespace.</p>
-
-                                <p class="link"><a href="#">Learn more about Distraction-Free Mode &rsaquo;</a></p>
-                            </div>
-                        </div>
-                        <div class="module module-image desktop-5">
-                            <div class="info">
-                                <img src="/img/placeholder.png" alt="Placeholder" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="grid-container">
-                    <div class="oldgrid">
-                        <div class="module module-image desktop-5">
-                            <div class="info">
-                                <img src="/img/placeholder.png" alt="Placeholder" />
-                            </div>
-                        </div>
-                        <div class="module module-info desktop-7">
-                            <div class="info">
-                                <h3>Configurable</h3>
-
-                                <p>Prefer your editor with a more lightweight interface, or just need to focus? Enable our distraction-free mode to hide almost all of the UI. You can even configure what should be hidden when this mode is enabled, from scroll bars to line numbers to whitespace.</p>
-
-                                <p class="link"><a href="#">Learn more about Distraction-Free Mode &rsaquo;</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="grid-container">
-                    <div class="oldgrid">
-
                         <div class="rowhead">
-                            <h2>Cross-Platform</h2>
-                            <h3>Works on Windows, Mac OS X and Linux</h3>
+                            <h2>Unit Testing</h2>
+                            <h3>Have confidence in your codebase</h3>
                         </div>
 
-                        <div class="module module-image desktop-12">
+                        <div class="module module-image desktop-5">
                             <div class="info">
-                                <img src="/img/cross-platform.png" alt="The Windows, Mac OS X and Linux Logos" />
+                                <img src="/img/placeholder.png" alt="Placeholder" />
                             </div>
                         </div>
-                        <div class="module module-info desktop-12">
-                            <div class="info" style="text-align: center">
-                                <p><?= Core::APPNAME ?> is fully cross-platform and runs on Windows, Mac OS X, Ubuntu, Debian, Fedora &amp; CentOS.</p>
+                        <div class="module module-info desktop-7">
+                            <div class="info">
+                                <h3>PHPUnit Continuous Test Runner</h3>
+
+                                <p>You don't realise how useful it is to know immediately when one of your code changes has broken a unit test until you have a continuous test runner. Ours runs in the background monitoring your code and running impacted tests automatically. Combined with code coverage (see below) this is a very powerful and useful feature.</p>
+
+                                <p class="link"><a href="#">Learn more about Testing &rsaquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="grid-container">
+                    <div class="oldgrid">
+                        <div class="module module-info desktop-7">
+                            <div class="info">
+                                <h3>Code Coverage</h3>
+
+                                <p>Combined with our continuous test runner, we're able to show full code coverage for every PHP file in a project - in real time. We highlight lines that are covered by failing, risky, incomplete or skipped tests, or even lines that don't have any code coverage. You will know immediately show you if your code change has broken any unit tests.</p>
+
+                                <p class="link"><a href="#">Learn more about Testing &rsaquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="module module-image desktop-5">
+                            <div class="info">
+                                <img src="/img/placeholder.png" alt="Placeholder" />
                             </div>
                         </div>
                     </div>
