@@ -18,7 +18,7 @@ $page = "index";
 
             <div class="headertext headertext-landing">
                 <h1>An Editor for the Modern Web</h1>
-                <h2><?= Core::APPNAME ?> is a powerful, feature-rich development environment designed by web developers, for web developers.</h2>
+                <h2><?= Core::APPNAME ?> is a powerful, feature-rich web development environment designed by web developers, for web developers.</h2>
 
                 <!-- <h2><?= Core::APPNAME ?> gives you everything you need to build beautiful, dynamic websites or apps using the latest languages and frameworks.</h2> -->
 
